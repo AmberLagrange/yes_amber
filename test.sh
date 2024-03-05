@@ -1,6 +1,6 @@
 #!/bin/bash
 
-YES_PROGS=$(find . ! -name 'makefile' ! -name '*.*')
+YES_PROGS=$(find . -maxdepth 1 ! -name 'makefile' ! -name LICENSE ! -name '*.*')
 
 for prog in $YES_PROGS
 do
